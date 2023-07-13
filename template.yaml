@@ -68,7 +68,23 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+        secret:
+          title: Enter Secret Name
+          type: string
+          description: This will be secret name
+        secretValue:
+          title: Secret Value
+          type: string
+          ui:widget: password
   steps:
+    - id: create secret
+      name: Create Harness Secret
+      action: create:harness-secret
+      input:
+        identifier: ${{ parameters.secret }}
+        name: ${{ parameters.secret }}
+        secretManagerIdentifier: "harnessSecretManager"
+        value: ${{ parameters.secretValue }}
     - id: trigger
       name: Creating Your Django Service
       action: trigger:harness-custom-pipeline
