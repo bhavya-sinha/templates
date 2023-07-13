@@ -81,7 +81,6 @@ spec:
       name: Create Harness Secret
       action: create:harness-secret
       input:
-      input:
         url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
         inputset:
           identifier: ${{ parameters.secret }}
