@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: djangoservice
-  title: Create a Django Service
+  title: Create a Pipeline template for Django service
   description: An template for the scaffolder that creates a Django service
   tags:
     - django
