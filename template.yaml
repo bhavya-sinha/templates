@@ -105,7 +105,7 @@ spec:
       name: Register
       action: catalog:register
       input:
-        catalogInfoUrl: https://github.com/SarvJ1/${{ parameters.repository }}/blob/main/catalog-info.yaml       
+        catalogInfoUrl: https://github.com/bhavya-sinha/${{ parameters.repository }}/blob/main/catalog-info.yaml     
   output:
     links:
       - title: Pipeline Details
