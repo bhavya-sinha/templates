@@ -83,11 +83,9 @@ spec:
       input:
         url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
         inputset:
-          identifier: ${{ parameters.secret }}
           name: ${{ parameters.secret }}
           secretManagerIdentifier: "harnessSecretManager"
           value: ${{ parameters.secretValue }}
-        apikey: ${{ parameters.token }}
     - id: trigger
       name: Creating Your Django Service
       action: trigger:harness-custom-pipeline
