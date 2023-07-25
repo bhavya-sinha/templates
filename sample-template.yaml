@@ -65,7 +65,7 @@ spec:
       name: Creating your Next.js app
       action: trigger:harness-custom-pipeline
       input:
-        url: "https://app.harness.io/ng/account/vpCkHKsDSxK9_KYfjCTMKA/home/orgs/QE_Team/projects/Quality_Assurence/pipelines/IDP_New_NextJS_app/pipeline-studio/?storeType=INLINE"
+        url: "https://qa.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/ci/orgs/default/projects/idptestproject/pipelines/IDP_NextJS_App/pipeline-studio/?storeType=INLINE"
         inputset:
           project_name: ${{ parameters.project_name }}
           github_repo: ${{ parameters.github_repo }}
