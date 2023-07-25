@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: demotemplate
-  title: Demo Template Example
+  name: sampletemplate
+  title: Sample Template Example
   description: An template for the scaffolder that creates a Django service
   tags:
     - django
@@ -81,7 +81,7 @@ spec:
       name: Create Harness Secret
       action: harness:create-secret
       input:
-        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
+        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service_Bhavya/pipeline-studio/?storeType=INLINE'
         inputParameters:
           name: ${{ parameters.secret }}
           value: ${{ parameters.secretValue }}
@@ -90,7 +90,7 @@ spec:
       name: Creating Your Django Service
       action: trigger:harness-custom-pipeline
       input:
-        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
+        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service_Bhavya/pipeline-studio/?storeType=INLINE'
         inputset:
           provider: ${{ parameters.provider }}
           db: ${{ parameters.db }}
@@ -104,7 +104,7 @@ spec:
       name: Deletes a Harness Secret
       action: harness:delete-secret
       input:
-        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
+        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service_Bhavya/pipeline-studio/?storeType=INLINE'
         secretIdentifier: ${{ steps.createsecret.output.SecretIdentifier }}
       apikey: ${{ parameters.token }}
   output:
