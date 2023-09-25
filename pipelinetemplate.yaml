@@ -73,7 +73,7 @@ spec:
       name: Creating Your Django Service
       action: trigger:harness-custom-pipeline
       input:
-        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
+        url: 'https://stress.harness.io/ng/account/rzjR8UyZTpOAd6SLDfdBuw/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
         inputset:
           provider: ${{ parameters.provider }}
           db: ${{ parameters.db }}
