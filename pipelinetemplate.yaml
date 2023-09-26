@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: pipelinetemplate
-  title: Pipeline template example
+  name: sampletest
+  title: Create a Sample pipeline
   description: An template for the scaffolder that creates a Django service
   tags:
     - django
@@ -28,11 +28,6 @@ spec:
         isPublish:
           title: Do you wish to publish the internal registry?
           type: boolean
-        token:
-          title: Harness Token
-          type: string
-          ui:widget: password
-          ui:field: HarnessAuthToken
     - title: Service Infrastructure Details
       required:
         - provider
@@ -68,12 +63,17 @@ spec:
           ui:options:
             allowedKinds:
               - Group
+        token:
+          title: Harness Token
+          type: string
+          ui:widget: password
+          ui:field: HarnessAuthToken
   steps:
     - id: trigger
       name: Creating Your Django Service
       action: trigger:harness-custom-pipeline
       input:
-        url: 'https://stress.harness.io/ng/account/rzjR8UyZTpOAd6SLDfdBuw/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
+        url: 'https://stress.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/IDPTest/pipelines/Django_Service/pipeline-studio/?storeType=INLINE'
         inputset:
           provider: ${{ parameters.provider }}
           db: ${{ parameters.db }}
