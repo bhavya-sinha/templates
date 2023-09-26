@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: sampletest
-  title: Create a Sample pipeline
+  name: pipeline template
+  title: Pipeline template
   description: An template for the scaffolder that creates a Django service
   tags:
     - django
