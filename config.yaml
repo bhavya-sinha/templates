@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: harness_iac_test
-  title: Create Infra
+  name: tokentest
+  title: Token Test
   description: Uses Harness-IaC to dynamically provision any required infrastructure.
   tags:
     - java
