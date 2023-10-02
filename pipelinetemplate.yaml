@@ -28,6 +28,11 @@ spec:
         isPublish:
           title: Do you wish to publish the internal registry?
           type: boolean
+        token:
+          title: Harness Token
+          type: string
+          ui:widget: password
+          ui:field: HarnessAuthToken
     - title: Service Infrastructure Details
       required:
         - provider
@@ -63,11 +68,6 @@ spec:
           ui:options:
             allowedKinds:
               - Group
-        token:
-          title: Harness Token
-          type: string
-          ui:widget: password
-          ui:field: HarnessAuthToken
   steps:
     - id: trigger
       name: Creating Your Django Service
