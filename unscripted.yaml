@@ -71,7 +71,7 @@ spec:
       name: Provisioning your Infrastructure
       action: trigger:harness-custom-pipeline
       input:
-        url: 'https://app.harness.io/ng/account/6_vVHzo9Qeu9fXvj-AcbCQ/home/orgs/default/projects/Platform_Demo/pipelines/IaCM_Provision_EC2_Instance/pipeline-studio/?storeType=INLINE'
+        url: 'https://app.harness.io/ng/account/zEaak-FLS425IEO7OLzMUg/home/orgs/default/projects/Platform_Demo/pipelines/IaCM_Provision_EC2_Instance/pipeline-studio/?storeType=INLINE'
         inputset:
           owner: ${{ parameters.owner }}
         apikey: ${{ parameters.token }}
